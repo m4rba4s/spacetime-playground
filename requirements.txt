@@ -1,0 +1,23 @@
+# Space-Playground Python Dependencies
+# Python 3.10+ required
+
+# Core numerical computing
+numpy>=1.23.0
+scipy>=1.9.0
+
+# Visualization
+matplotlib>=3.6.0
+imageio>=2.22.0
+Pillow>=9.3.0
+
+# Performance optimization
+numba>=0.56.0
+
+# Testing
+pytest>=7.2.0
+pytest-cov>=4.0.0
+
+# Optional: Quantum information extensions
+# Uncomment if using quantum modules
+# qiskit>=0.39.0
+# quimb>=1.4.0

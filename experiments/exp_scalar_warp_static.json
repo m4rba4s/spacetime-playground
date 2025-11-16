@@ -1,0 +1,32 @@
+{
+    "name": "exp_scalar_warp_static",
+    "description": "Static warp bubble with Gaussian pulse - observing field propagation through localized metric deformation",
+    "type": "scalar_1d",
+    "metric": {
+        "type": "gaussian_warp",
+        "amplitude": 0.3,
+        "width": 15.0,
+        "center": 50.0,
+        "velocity": 0.0
+    },
+    "simulation": {
+        "Nx": 400,
+        "Lx": 100.0,
+        "T": 80.0,
+        "dt": 0.04,
+        "c": 1.0,
+        "boundary": "periodic"
+    },
+    "initial_conditions": {
+        "type": "gaussian_pulse",
+        "center": 20.0,
+        "width": 5.0,
+        "amplitude": 1.0
+    },
+    "output": {
+        "save_interval": 10,
+        "export_csv": true,
+        "export_plots": true,
+        "export_animation": true
+    }
+}
